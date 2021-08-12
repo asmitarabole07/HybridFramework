@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRM_Test">
+	<listeners>
+		<listener class-name="com.qa.ExtenttRportListner.ExtentListeners"></listener>
+	</listeners>
+	<test name="Page_tests">
+		<classes>
+			<class name="com.crm.qa.testcases.LeavePageTest" />
+			<class name="com.crm.qa.testcases.DashboardPageTest" />
+			<class name="com.crm.qa.testcases.HomePageTest" />
+			<class name="com.crm.qa.testcases.LoginPageTest" />
+			<class name="com.crm.qa.testcases.AdminPageTest" />
+		</classes>
+	</test> <!-- Page_tests -->
+</suite> <!-- OrangeHRM_Test -->
