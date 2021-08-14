@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-OrangeHRM_Test" class="navigator-link">
-              <span class="suite-name border-passed">OrangeHRM_Test</span>
+              <span class="suite-name border-failed">OrangeHRM_Test</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods,   15 passed</span>
+                    <span class="method-stats">15 methods, 1 failed,   14 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-OrangeHRM_Test" class="hide-methods failed suite-OrangeHRM_Test"> (hide)</a> <!-- hide-methods failed suite-OrangeHRM_Test -->
+                      <a href="#" panel-name="suite-OrangeHRM_Test" class="show-methods failed suite-OrangeHRM_Test"> (show)</a> <!-- show-methods failed suite-OrangeHRM_Test -->
+                    </span>
+                    <div class="method-list-content failed suite-OrangeHRM_Test">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Test" title="com.crm.qa.testcases.LeavePageTest" class="method navigator-link" hash-for-method="leaveDataInputTest">leaveDataInputTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-OrangeHRM_Test -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,17 +118,22 @@
                     <div class="method-list-content passed suite-OrangeHRM_Test">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Test" title="com.crm.qa.testcases.LeavePageTest" class="method navigator-link" hash-for-method="leaveDataInputTest">leaveDataInputTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-OrangeHRM_Test" title="com.crm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="loginPageTitleTest">loginPageTitleTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-OrangeHRM_Test" title="com.crm.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Test" title="com.crm.qa.testcases.AdminPageTest" class="method navigator-link" hash-for-method="validateLocationSearchTest(Gujrat, Ahmadabad, India)">validateLocationSearchTest(Gujrat, Ahmadabad, India)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Test" title="com.crm.qa.testcases.AdminPageTest" class="method navigator-link" hash-for-method="validateLocationSearchTest(Karnataka, Bangalore, India)">validateLocationSearchTest(Karnataka, Bangalore, India)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -130,16 +149,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-OrangeHRM_Test" title="com.crm.qa.testcases.AdminPageTest" class="method navigator-link" hash-for-method="validateLocationSearchTest(Kashmir, Jammu, India)">validateLocationSearchTest(Kashmir, Jammu, India)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Test" title="com.crm.qa.testcases.AdminPageTest" class="method navigator-link" hash-for-method="validateLocationSearchTest(Karnataka, Bangalore, India)">validateLocationSearchTest(Karnataka, Bangalore, India)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Test" title="com.crm.qa.testcases.AdminPageTest" class="method navigator-link" hash-for-method="validateLocationSearchTest(Gujrat, Ahmadabad, India)">validateLocationSearchTest(Gujrat, Ahmadabad, India)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -189,6 +198,49 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-OrangeHRM_Test" class="panel OrangeHRM_Test">
+          <div class="suite-OrangeHRM_Test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.crm.qa.testcases.LeavePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="leaveDataInputTest">
+                  </a> <!-- leaveDataInputTest -->
+                  <span class="method-name">leaveDataInputTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;label for=&quot;leaveList_chkSearchFilter_checkboxgroup_allcheck&quot;&gt;...&lt;/label&gt; is not clickable at point (193, 332). Other element would receive the click: &lt;span class=&quot;ui-icon ui-icon-circle-triangle-w&quot;&gt;...&lt;/span&gt;
+  (Session info: chrome=91.0.4472.77)
+  (Driver info: chromedriver=91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-MNK2190&apos;, ip: &apos;192.168.43.38&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49216}, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 91.0.4472.77, webStorageEnabled: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: a933797dda3345fea94498d4a31...}
+Session ID: a933797dda3345fea94498d4a316790c
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at com.crm.qa.pages.LeavePage.dataInput(LeavePage.java:40)
+	at com.crm.qa.testcases.LeavePageTest.leaveDataInputTest(LeavePageTest.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM_Test-class-failed -->
           <div class="suite-OrangeHRM_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -219,6 +271,22 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="validateLocationSearchTest(Gujrat, Ahmadabad, India)">
+                  </a> <!-- validateLocationSearchTest(Gujrat, Ahmadabad, India) -->
+                  <span class="method-name">validateLocationSearchTest</span>
+                  <span class="parameters">(Gujrat, Ahmadabad, India)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLocationSearchTest(Karnataka, Bangalore, India)">
+                  </a> <!-- validateLocationSearchTest(Karnataka, Bangalore, India) -->
+                  <span class="method-name">validateLocationSearchTest</span>
+                  <span class="parameters">(Karnataka, Bangalore, India)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="validateLocationSearchTest(Telangana, Hydrabad, India)">
                   </a> <!-- validateLocationSearchTest(Telangana, Hydrabad, India) -->
                   <span class="method-name">validateLocationSearchTest</span>
@@ -239,22 +307,6 @@
                   </a> <!-- validateLocationSearchTest(Kashmir, Jammu, India) -->
                   <span class="method-name">validateLocationSearchTest</span>
                   <span class="parameters">(Kashmir, Jammu, India)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateLocationSearchTest(Karnataka, Bangalore, India)">
-                  </a> <!-- validateLocationSearchTest(Karnataka, Bangalore, India) -->
-                  <span class="method-name">validateLocationSearchTest</span>
-                  <span class="parameters">(Karnataka, Bangalore, India)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateLocationSearchTest(Gujrat, Ahmadabad, India)">
-                  </a> <!-- validateLocationSearchTest(Gujrat, Ahmadabad, India) -->
-                  <span class="method-name">validateLocationSearchTest</span>
-                  <span class="parameters">(Gujrat, Ahmadabad, India)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -324,21 +376,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-OrangeHRM_Test-class-passed -->
-          <div class="suite-OrangeHRM_Test-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.crm.qa.testcases.LeavePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="leaveDataInputTest">
-                  </a> <!-- leaveDataInputTest -->
-                  <span class="method-name">leaveDataInputTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OrangeHRM_Test-class-passed -->
         </div> <!-- panel OrangeHRM_Test -->
         <div panel-name="test-xml-OrangeHRM_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -402,68 +439,68 @@ data.addRows(15);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'validateLocationSearchTest')
 data.setCell(0, 2, 'com.crm.qa.testcases.AdminPageTest')
-data.setCell(0, 3, 8522);
+data.setCell(0, 3, 8454);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginTest')
-data.setCell(1, 2, 'com.crm.qa.testcases.LoginPageTest')
-data.setCell(1, 3, 7964);
+data.setCell(1, 1, 'validateLocationSearchTest')
+data.setCell(1, 2, 'com.crm.qa.testcases.AdminPageTest')
+data.setCell(1, 3, 8406);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyAdminLinkTest')
-data.setCell(2, 2, 'com.crm.qa.testcases.HomePageTest')
-data.setCell(2, 3, 3914);
+data.setCell(2, 1, 'validateLocationSearchTest')
+data.setCell(2, 2, 'com.crm.qa.testcases.AdminPageTest')
+data.setCell(2, 3, 7987);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'validateLocationSearchTest')
 data.setCell(3, 2, 'com.crm.qa.testcases.AdminPageTest')
-data.setCell(3, 3, 3730);
+data.setCell(3, 3, 7803);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'validateLocationSearchTest')
 data.setCell(4, 2, 'com.crm.qa.testcases.AdminPageTest')
-data.setCell(4, 3, 3229);
+data.setCell(4, 3, 7701);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'validateLocationSearchTest')
-data.setCell(5, 2, 'com.crm.qa.testcases.AdminPageTest')
-data.setCell(5, 3, 3118);
+data.setCell(5, 1, 'leaveDataInputTest')
+data.setCell(5, 2, 'com.crm.qa.testcases.LeavePageTest')
+data.setCell(5, 3, 5179);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'validateLocationSearchTest')
-data.setCell(6, 2, 'com.crm.qa.testcases.AdminPageTest')
-data.setCell(6, 3, 3043);
+data.setCell(6, 1, 'loginTest')
+data.setCell(6, 2, 'com.crm.qa.testcases.LoginPageTest')
+data.setCell(6, 3, 4261);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'leaveDataInputTest')
-data.setCell(7, 2, 'com.crm.qa.testcases.LeavePageTest')
-data.setCell(7, 3, 2490);
+data.setCell(7, 1, 'validateUsernameAndUserRoleTest')
+data.setCell(7, 2, 'com.crm.qa.testcases.AdminPageTest')
+data.setCell(7, 3, 4011);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'validateUsernameAndUserRoleTest')
-data.setCell(8, 2, 'com.crm.qa.testcases.AdminPageTest')
-data.setCell(8, 3, 298);
+data.setCell(8, 1, 'verifyAdminLinkTest')
+data.setCell(8, 2, 'com.crm.qa.testcases.HomePageTest')
+data.setCell(8, 3, 1604);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyMyTimesheetLebelTest')
+data.setCell(9, 1, 'validatePendingLeaveRequestsLebelTest')
 data.setCell(9, 2, 'com.crm.qa.testcases.DashboardPageTest')
-data.setCell(9, 3, 262);
+data.setCell(9, 3, 601);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'validatePendingLeaveRequestsLebelTest')
-data.setCell(10, 2, 'com.crm.qa.testcases.DashboardPageTest')
-data.setCell(10, 3, 96);
+data.setCell(10, 1, 'verifyUsernameTest')
+data.setCell(10, 2, 'com.crm.qa.testcases.HomePageTest')
+data.setCell(10, 3, 562);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifyUsernameTest')
-data.setCell(11, 2, 'com.crm.qa.testcases.HomePageTest')
-data.setCell(11, 3, 91);
+data.setCell(11, 1, 'verifyUserManagementLebelTest')
+data.setCell(11, 2, 'com.crm.qa.testcases.AdminPageTest')
+data.setCell(11, 3, 544);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verifyUserManagementLebelTest')
-data.setCell(12, 2, 'com.crm.qa.testcases.AdminPageTest')
-data.setCell(12, 3, 65);
+data.setCell(12, 1, 'verifyHomePageTitleTest')
+data.setCell(12, 2, 'com.crm.qa.testcases.HomePageTest')
+data.setCell(12, 3, 530);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'loginPageTitleTest')
-data.setCell(13, 2, 'com.crm.qa.testcases.LoginPageTest')
-data.setCell(13, 3, 25);
+data.setCell(13, 1, 'verifyMyTimesheetLebelTest')
+data.setCell(13, 2, 'com.crm.qa.testcases.DashboardPageTest')
+data.setCell(13, 3, 497);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'verifyHomePageTitleTest')
-data.setCell(14, 2, 'com.crm.qa.testcases.HomePageTest')
-data.setCell(14, 3, 9);
+data.setCell(14, 1, 'loginPageTitleTest')
+data.setCell(14, 2, 'com.crm.qa.testcases.LoginPageTest')
+data.setCell(14, 3, 239);
 window.suiteTableData['OrangeHRM_Test']= { tableData: data, tableDiv: 'times-div-OrangeHRM_Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 36 seconds</span>
+              <span class="suite-total-time">Total running time: 58 seconds</span>
               <div id="times-div-OrangeHRM_Test">
               </div> <!-- times-div-OrangeHRM_Test -->
             </div> <!-- times-div -->
@@ -495,192 +532,194 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">leaveDataInputTest</span>
-                <span class="method-start">29180 ms</span>
+                <span class="method-start">18007 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">31739 ms</span>
+                <span class="method-start">23260 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testcases.DashboardPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">32477 ms</span>
+                <span class="method-start">23625 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyMyTimesheetLebelTest</span>
-                <span class="method-start">55765 ms</span>
+                <span class="method-start">34142 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">56031 ms</span>
+                <span class="method-start">34641 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">56660 ms</span>
+                <span class="method-start">34936 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validatePendingLeaveRequestsLebelTest</span>
-                <span class="method-start">81982 ms</span>
+                <span class="method-start">46534 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">82081 ms</span>
+                <span class="method-start">47137 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">82703 ms</span>
+                <span class="method-start">47424 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyHomePageTitleTest</span>
-                <span class="method-start">112147 ms</span>
+                <span class="method-start">56834 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">112159 ms</span>
+                <span class="method-start">57366 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">112632 ms</span>
+                <span class="method-start">57687 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUsernameTest</span>
-                <span class="method-start">140029 ms</span>
+                <span class="method-start">71305 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">140123 ms</span>
+                <span class="method-start">71869 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">140644 ms</span>
+                <span class="method-start">72162 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAdminLinkTest</span>
-                <span class="method-start">160819 ms</span>
+                <span class="method-start">83782 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">164738 ms</span>
+                <span class="method-start">85392 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testcases.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">165192 ms</span>
+                <span class="method-start">85972 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginPageTitleTest</span>
-                <span class="method-start">178754 ms</span>
+                <span class="method-start">92524 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">178781 ms</span>
+                <span class="method-start">92767 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">179238 ms</span>
+                <span class="method-start">93063 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">193982 ms</span>
+                <span class="method-start">99440 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">201948 ms</span>
+                <span class="method-start">103703 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testcases.AdminPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">202470 ms</span>
+                <span class="method-start">103976 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUserManagementLebelTest</span>
-                <span class="method-start">230020 ms</span>
+                <span class="method-start">116762 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">230088 ms</span>
+                <span class="method-start">117309 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">230448 ms</span>
+                <span class="method-start">117651 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateUsernameAndUserRoleTest</span>
-                <span class="method-start">263295 ms</span>
+                <span class="method-start">129863 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">263596 ms</span>
+                <span class="method-start">133879 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">265181 ms</span>
+                <span class="method-start">137541 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateLocationSearchTest(Maharashtra, Pune, India)</span>
-                <span class="method-start">286216 ms</span>
+                <span class="method-start">151219 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">289950 ms</span>
+                <span class="method-start">159631 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">290392 ms</span>
+                <span class="method-start">159953 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateLocationSearchTest(Karnataka, Bangalore, India)</span>
-                <span class="method-start">316600 ms</span>
+                <span class="method-start">172842 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">319651 ms</span>
+                <span class="method-start">180833 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">320215 ms</span>
+                <span class="method-start">181149 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateLocationSearchTest(Gujrat, Ahmadabad, India)</span>
-                <span class="method-start">406676 ms</span>
+                <span class="method-start">192875 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">409909 ms</span>
+                <span class="method-start">200578 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">410452 ms</span>
+                <span class="method-start">200925 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateLocationSearchTest(Kashmir, Jammu, India)</span>
-                <span class="method-start">436756 ms</span>
+                <span class="method-start">215621 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">445285 ms</span>
+                <span class="method-start">224079 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">445666 ms</span>
+                <span class="method-start">224380 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateLocationSearchTest(Telangana, Hydrabad, India)</span>
-                <span class="method-start">469524 ms</span>
+                <span class="method-start">237706 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">472650 ms</span>
+                <span class="method-start">245513 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

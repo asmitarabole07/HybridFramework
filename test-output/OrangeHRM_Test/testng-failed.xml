@@ -6,31 +6,6 @@
   </listeners>
   <test thread-count="5" name="Page_tests(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.LoginPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="loginTest"/>
-          <include name="tearDown"/>
-          <include name="loginPageTitleTest"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
-      <class name="com.crm.qa.testcases.AdminPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="validateLocationSearchTest"/>
-          <include name="validateUsernameAndUserRoleTest"/>
-          <include name="verifyUserManagementLebelTest"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.AdminPageTest -->
-      <class name="com.crm.qa.testcases.DashboardPageTest">
-        <methods>
-          <include name="verifyMyTimesheetLebelTest"/>
-          <include name="validatePendingLeaveRequestsLebelTest"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.DashboardPageTest -->
       <class name="com.crm.qa.testcases.LeavePageTest">
         <methods>
           <include name="leaveDataInputTest"/>
@@ -38,14 +13,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.LeavePageTest -->
-      <class name="com.crm.qa.testcases.HomePageTest">
-        <methods>
-          <include name="verifyUsernameTest"/>
-          <include name="verifyAdminLinkTest"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.HomePageTest -->
     </classes>
   </test> <!-- Page_tests(failed) -->
 </suite> <!-- Failed suite [OrangeHRM_Test] -->
